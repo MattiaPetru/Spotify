@@ -1,0 +1,137 @@
+html, body {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+/* NAV */
+.nav-item:hover, .current {
+    background-color: #121212;
+    border-radius: 30px !important;
+}
+.page-controllers {
+    width: inherit;
+}
+.page-controllers.no-aside {
+    width: -webkit-fill-available;
+}
+
+a:not(.nav-link):hover {
+    text-decoration: underline !important;
+}
+
+/* CUSTOM FONT SIZE */
+.fs-7 {
+    font-size: 14px;
+}
+
+.fs-8 {
+    font-size: 12px;
+}
+
+/* CUSTOM COLORS */
+.brand-bg {
+    background-color: #1DD55F;
+}
+
+.brand-border {
+    border: 1px solid #1DD55F;
+}
+
+.brand-color {
+    color: #1DD55F;
+}
+
+.bg-black-500 {
+    background-color: #242424;
+}
+
+.bg-black-700 {
+    background-color: #121212;
+}
+
+/* USER IMG */
+.user-img {
+    width: 30px;
+    height: 30px;
+    margin-left: 3px;
+}
+
+/* CUSTOM SCROLL BAR */
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #3d3d3d;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* JUMBOTRON */
+.jumbotron .title {
+    font-size: 60px;
+}
+
+.jumbotron button {
+    min-width: 100px;
+}
+
+.jumbotron img {
+    width: 200px;
+    height: 200px;
+    min-width: 200px;
+}
+
+.jumbotron img#artist-img {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+}
+
+
+/* SKELETON */
+.skeleton h1, .skeleton h2, .skeleton h3, .skeleton p, .skeleton a:not(.no-skeleton), .skeleton button {
+    color: transparent !important;
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #3d3d3d;
+    pointer-events: none;
+    animation: skeleton 0.75s infinite alternate;
+}
+
+.skeleton button {
+    border-color: #3d3d3d !important;
+}
+
+.skeleton img {
+    animation: skeleton 0.75s infinite alternate;
+    filter: grayscale(100) contrast(0%) brightness(0.5);
+}
+
+@keyframes skeleton {
+    from {
+        opacity: .4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body.overflow-hidden {
+        overflow: auto !important;
+    }
+
+    #songsContainer section {
+        position: inherit !important;
+    }
+}
